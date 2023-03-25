@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 import { useEffect, useState } from 'react';
@@ -12,7 +11,6 @@ export default function Home({ navigation }) {
 
   useEffect(() => {
     setSearchResults(locations.filter((element) => element.name.toLowerCase().indexOf(search.toLowerCase()) != -1));
-    // console.log(locations);
   }, [search]);
 
   return (

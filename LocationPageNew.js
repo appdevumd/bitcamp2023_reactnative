@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Dimensions,
         ImageBackground, Image } from 'react-native';
 
@@ -8,7 +8,6 @@ const imageWidth = dimensions.width;
 
 
 const LocationPageNew = ({route, navigation}) => {
-  const [flexDirection, setflexDirection] = useState('column');
   const props = route.params['information'];
 
   const backButtonAction = () => {

@@ -1,7 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { SearchBar } from 'react-native-elements';
-import { useState } from 'react';
 import { ImageBackground } from 'react-native';
 
 export default function LocationCard(props) {
@@ -31,7 +28,6 @@ const styles = StyleSheet.create({
     textContainer: {
         color: 'white',
         position: 'absolute', 
-        // top: 0, 
         left: 0, 
         right: 0, 
         bottom: 0, 
